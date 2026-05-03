@@ -15,9 +15,11 @@
 
         <h2>1° Período do curso de Sistemas de Informação</h2>
 
-        <img style="height: 450px;" src="assets/img/foto_perfil.jpeg" alt="Foto pessoal">
+        <img src="assets/img/foto_perfil.jpeg"
+            alt="Essa é a minha foto pessoal utilizada como foto de perfil no currículo" width="300" height="450"
+            loading="lazy">
 
-        <h3 style="font-size: 12px;">Data de Nascimento: 16/02/2006</h3>
+        <h3 style="font-size: 12px;">Data de Nascimento: <time datetime="2006-02-16">16/02/2006</time></h3>
     </header>
 
     <main>
@@ -40,8 +42,8 @@
                 <li>Análise de Requisitos</li>
                 <li>Banco de Dados</li>
                 <li>Sistemas de Informação</li>
-                <li>POO</li>
-                <li>IHC</li>
+                <li><abbr title="Programação Orientada a Objetos">POO</abbr></li>
+                <li><abbr title="Interação Humano Computador">IHC</abbr></li>
             </ul>
         </section>
 
@@ -50,41 +52,46 @@
             <h3>Engenharia de Software</h3>
             <p>É um curso focado em projetar, desenvolver, testar e manter softwares de alta qualidade, focado em
                 metodologias ágeis, programação e arquitetura.</p>
-            <a href="https://inscricoes.unicesumar.edu.br/curso/engenharia-de-software">Link para o site do curso de
+            <a href="https://inscricoes.unicesumar.edu.br/curso/engenharia-de-software" target="_blank"
+                rel="noopener noreferrer">Link para o site do curso de
                 Engenharia de Software</a>
             <h3>Sistemas de Informação</h3>
             <p>É um curso focado em projetar, desenvolver e gerenciar soluções tecnológicas para empresas, equilibrando
                 tecnologia (programação, banco de dados) e gestão (administração, processos), com foco na otimização de
                 dados.</p>
-            <a
-                href="https://www2.ifal.edu.br/campus/maceio/ensino/cursos/superior/bacharelado-em-sistemas-de-informacao">Link
+            <a href="https://www2.ifal.edu.br/campus/maceio/ensino/cursos/superior/bacharelado-em-sistemas-de-informacao"
+                target="_blank" rel="noopener noreferrer">Link
                 para o site do curso de Sistemas de Informação</a>
         </aside>
 
+        <nav aria-label="Links referentes as informações de contato do currículo">
+            <ul>
+                <li><a href="mailto:felipefea50@gmail.com">E-mail: felipefea50@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/felipe-fernando-alc%C3%A2ntara-silva-de-oliveira-21b435333/"
+                        target="_blank" rel="me noopener noreferrer"
+                        aria-label="Acesse o link para o meu perfil do LinkedIn">Perfil do LinkedIn</a></li>
+                <li><a href="https://github.com/felipe8202" target="_blank" rel="me noopener noreferrer"
+                        aria-label="Acesse o link para o meu perfil do GitHub">Perfil do GitHub</a></li>
+            </ul>
+        </nav>
     </main>
 
     <footer id="contato">
         <h2>Informações para contato</h2>
 
-        <p>E-mail: felipefea50@gmail.com</p>
-        <nav>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/felipe-fernando-alc%C3%A2ntara-silva-de-oliveira-21b435333/">Perfil do LinkedIn</a></li>
-                <li><a href="https://github.com/felipe8202">Perfil do GitHub</a></li>
-            </ul>
-        </nav>
-
-        <nav>
+        <nav aria-label="Links do rodapé referentes a navegação do site">
             <h3>Menu rápido</h3>
             <ul style="font-size: 11pt;">
                 <li><a href="#">Início</a></li>
-                <li><a href="#sobre-mim">Sobre mim</a></li>
-                <li><a href="#conhecimentos">Conhecimentos na área</a></li>
-                <li><a href="#cursos">Cursos que faço</a></li>
-                <li><a href="#contato">Informações para contato</a></li>
+                <li><a href="#sobre-mim" aria-label="Volte para o tópico Sobre Mim">Sobre mim</a></li>
+                <li><a href="#conhecimentos" aria-label="Volte para o tópico Conhecimentos">Conhecimentos na área</a></li>
+                <li><a href="#cursos" aria-label="Volte para o tópico Cursos">Cursos que faço</a></li>
+                <li><a href="#contato" aria-label="Volte para o tópico Informações para Contato">Informações para contato</a></li>
             </ul>
+            <p>&copy; 2026 - Felipe Fernando. Todos os diretos reservados.</p>
         </nav>
     </footer>
 
 </body>
+
 </html>
