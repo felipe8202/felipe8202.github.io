@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.8rem;
+    background-color: #94976b;
+    color: #ececec;
+}
+
+header {
+    padding: 2rem;
+    background-color: gray;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.conteiner {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+blockquote {
+    border-left: 5px solid gold;
+    border-radius: 5px;
+    padding-left: 1.5rem;
+    font-style: italic;
+    font-weight: 500;
+    color: black;
+}
+
+footer {
+    padding: 2rem;
+    background-color: rgb(241, 129, 89);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: #336ce7;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 200px;
+    margin: 0 auto;
+    text-decoration: wavy;
+}
