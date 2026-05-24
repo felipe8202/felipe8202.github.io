@@ -13,27 +13,35 @@ html {
 body {
     font-family: "Montserrat", sans-serif;
     line-height: 1.8rem;
-    background-color: #94976b;
+    background-color: rgb(126, 126, 126);
     color: #ececec;
 }
 
 header {
     padding: 2rem;
-    background-color: gray;
+    color: black;
+    background-color: rgb(201, 200, 200);
     text-align: center;
     margin: 0 auto;
 }
 
 .conteiner {
-    max-width: 700px;
+    max-width: clamp(375px, 80vw, 1200px) ;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2rem 2rem 0.5rem 2rem;
 }
 
 h1 {
     font-size: 2rem;
     font-weight: 2rem;
-    margin-bottom: 1.5rem;
+
+    padding-bottom: 1rem;
+}
+
+.datetime {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 h2 {
@@ -42,7 +50,7 @@ h2 {
     margin-bottom: 2rem;
 }
 
-p {
+.article-text {
     margin-bottom: 1.5rem;
     font-size: 1rem;
 }
@@ -56,18 +64,19 @@ blockquote {
     color: black;
 }
 
-footer {
-    padding: 2rem;
-    background-color: rgb(241, 129, 89);
+footer p {
+    color: red;
+    background-color: #191919;
     text-align: center;
     margin: 0 auto;
+    padding: 1rem;
 }
 
 .btn {
     background-color: #336ce7;
     color: white;
     border-radius: 8px;
-    padding: 10px;
+    padding: 0.5rem;
     max-width: 200px;
     margin: 0 auto;
     text-decoration: wavy;

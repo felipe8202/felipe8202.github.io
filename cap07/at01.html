@@ -15,19 +15,24 @@
         .links {
             font-style: oblique;
             color: blue;
+            text-decoration: none;
         }
 
         .cartao {
+            box-sizing: border-box;
+            width: 90%;
+            max-width: 600px;
             background-color: rgb(36, 35, 35);
             border-radius: 8px;
-            padding: 3rem;
-            width: 75%;
+            padding: clamp(2rem, 3vw, 4rem);
             margin: 0 auto;
         }
 
         .cartao-nome {
             font-size: 2rem;
             color: white;
+            padding: 0;
+            margin: 0;
         }
 
         .cartao-divisor {
@@ -39,6 +44,7 @@
         .cartao-cargo {
             font-style: italic;
             color: grey;
+            margin: 0 auto;
         }
 
         .cartao-email {
@@ -60,7 +66,7 @@
             <h1 class="cartao-nome">Felipe Fernando Alcântara Silva de Oliveira</h1>
             <hr class="cartao-divisor" />
             <p class="cartao-cargo">Estudante de Sistemas de Informação — <abbr title="Instituto Federal de Alagoas">IFAL</abbr></p>
-            <p class="cartao-email">ffaso1@aluno.ifal.edu.br</p>
+            <a class="cartao-email" href="mailto:ffaso1@aluno.ifal.edu.br">ffaso1@aluno.ifal.edu.br</a>
         </article>
     </main>
 
