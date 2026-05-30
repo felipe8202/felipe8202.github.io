@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  --cor-fundo: #d7c4a1;
+  --cor-texto: #2b1d14;
+  --cor-primaria: #8b0000;
+  --cor-secundaria: #5c4033;
+  --cor-borda: #1a110b;
+  --fonte-titulos: 'Rye', serif;
+  --fonte-texto: 'Crimson Text', serif;
+}
+
+html {
+  background-color: #1a110b;
+  animation: envelhecer 2s ease-in-out forwards;
+}
+
+@keyframes envelhecer {
+  0% {
+    filter: sepia(0) contrast(1) brightness(1);
+  }
+  100% {
+    filter: sepia(0.5) contrast(1.1) brightness(0.9);
+  }
+}
+
+body {
+  background-color: #1a110b;
+  color: var(--cor-texto);
+  font-family: var(--fonte-texto);
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.page-wrapper {
+  background-color: var(--cor-fundo);
+  background-image: radial-gradient(circle at center, transparent 60%, rgba(92, 64, 51, 0.4) 100%);
+  max-width: 900px;
+  width: 100%;
+  border: 12px solid var(--cor-borda);
+  outline: 4px solid var(--cor-borda);
+  outline-offset: -20px;
+  padding: 4rem 3rem;
+  box-shadow: inset 0 0 50px rgba(43, 29, 20, 0.5), 0 15px 35px rgba(0, 0, 0, 0.9);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+h1, h2, h3 {
+  font-family: var(--fonte-titulos);
+  color: var(--cor-primaria);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.summary p:first-of-type::first-letter {
+  font-family: var(--fonte-titulos);
+  font-size: 3.5rem;
+  color: var(--cor-primaria);
+  float: left;
+  line-height: 1;
+  padding-right: 8px;
+  padding-top: 4px;
+}
+
+#zen-intro header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-bottom: 4px solid var(--cor-borda);
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+#zen-intro header h1 {
+  font-family: var(--fonte-titulos);
+  font-size: 4.5rem;
+  color: var(--cor-borda);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1;
+}
+
+#zen-intro header h1::after {
+  content: "DEAD OR ALIVE";
+  display: block;
+  font-family: var(--fonte-titulos);
+  font-size: 2.5rem;
+  color: var(--cor-primaria);
+  margin-top: 15px;
+  letter-spacing: 8px;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+}
+
+#zen-intro header h2 {
+  font-family: var(--fonte-texto);
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--cor-primaria);
+  margin-top: 10px;
+}
+
+#zen-supporting h3 {
+  text-shadow: 1px 1px 0px rgba(255,255,255,0.3), -1px -1px 0px rgba(0,0,0,0.8);
+  color: var(--cor-borda);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+  .page-wrapper {
+    border-width: 6px;
+    outline-offset: -10px;
+    padding: 2rem 1.5rem;
+  }
+  #zen-intro header h1 {
+    font-size: 3rem;
+  }
+}
+
+.sidebar {
+  border-top: 4px dashed var(--cor-borda);
+  padding-top: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.sidebar .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+
+.sidebar .wrapper > div {
+  flex: 1 1 30%;
+  min-width: 250px;
+}
+
+.sidebar h3 {
+  font-family: var(--fonte-titulos);
+  color: var(--cor-borda);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--cor-primaria);
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar li::before {
+  content: "★";
+  color: var(--cor-primaria);
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: var(--cor-texto);
+  transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+  color: var(--cor-primaria);
+  padding-left: 5px;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
