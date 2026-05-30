@@ -1,3 +1,3 @@
-Atividade 03 - Repositório Pessoal
+# Atividade 03 - Repositório Pessoal
 
-Repositório criado para a Atividade 03 da disciplina.
+## Repositório criado para a Atividade 03 da disciplina.
