@@ -1,24 +1,24 @@
 :root {
   /* ── Paleta de cores ── */
-  --cor-primaria:    /* obrigatório */;
-  --cor-secundaria:  /* obrigatório */;
-  --cor-destaque:    /* obrigatório */;
-  --cor-sucesso:     /* obrigatório — ex.: verde */;
-  --cor-erro:        /* obrigatório — ex.: vermelho */;
-  --cor-texto:       /* obrigatório */;
-  --cor-texto-claro: /* obrigatório — texto sobre fundo escuro */;
-  --cor-fundo:       /* obrigatório */;
-  --cor-fundo-alt:   /* obrigatório — fundo alternativo */;
+  --cor-primaria:    #4f46e5;
+  --cor-secundaria:  #475569;
+  --cor-destaque:    #f59e0b;
+  --cor-sucesso:     #10b981;
+  --cor-erro:        #ef4444;
+  --cor-texto:       #1e293b;
+  --cor-texto-claro: #ffffff;
+  --cor-fundo:       #f8fafc;
+  --cor-fundo-alt:   #e2e8f0;
 
   /* ── Tipografia ── */
-  --fonte-base:    /* obrigatório — fonte para corpo do texto */;
-  --fonte-titulo:  /* obrigatório — fonte para títulos */;
+  --fonte-base:   'Inter', system-ui, sans-serif;
+  --fonte-titulo: 'Poppins', system-ui, sans-serif;
 
-  /* ── Tamanhos de fonte (clamp obrigatório nos dois primeiros) ── */
+  /* ── Tamanhos de fonte ── */
   --texto-display: clamp(2rem, 5vw, 4rem);
   --texto-h1:      clamp(1.75rem, 4vw, 3rem);
-  --texto-h2:      /* valor fixo em rem */;
-  --texto-h3:      /* valor fixo em rem */;
+  --texto-h2:      2rem;
+  --texto-h3:      1.5rem;
   --texto-base:    1rem;
   --texto-sm:      0.875rem;
   --texto-xs:      0.75rem;
@@ -46,5 +46,5 @@
 
   /* ── Layout ── */
   --largura-max: 1200px;
-  --altura-nav: /* valor em px ou rem */;
+  --altura-nav:  80px;
 }

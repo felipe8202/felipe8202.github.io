@@ -1,3 +1,306 @@
 @import url('at05-reset.css');
 @import url('at05-variables.css');
 
+/* ─── Base da Página ──────────────────────────────── */
+body {
+  font-family: var(--fonte-base);
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fonte-titulo);
+}
+
+.container {
+  max-width: var(--largura-max);
+  margin: 0 auto;
+  padding: var(--espaco-xl) var(--espaco-md);
+}
+
+.section-title {
+  font-size: var(--texto-h2);
+  margin-bottom: var(--espaco-lg);
+  border-bottom: 2px solid var(--cor-fundo-alt);
+  padding-bottom: var(--espaco-sm);
+}
+
+/* ─── Botão de Voltar ─────────────────────────────── */
+.btn-voltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: var(--espaco-lg);
+  
+  color: var(--cor-secundaria);
+  font-weight: 600;
+  font-size: var(--texto-sm);
+  text-decoration: none;
+  
+  background-color: transparent;
+  border: 1px solid var(--cor-fundo-alt);
+  border-radius: var(--raio-md);
+  
+  transition: all var(--transicao);
+}
+
+.btn-voltar:hover {
+  background-color: var(--cor-fundo-alt);
+  color: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+  transform: translateX(-4px);
+}
+
+.btn-voltar:focus-visible {
+  outline: 2px solid var(--cor-destaque);
+  outline-offset: 2px;
+}
+
+/* ─── Componente 1: Hero com gradiente e imagem ──── */
+.hero {
+  height: 100vh;
+  background-image: 
+    linear-gradient(rgba(30, 41, 59, 0.85), rgba(79, 70, 229, 0.8)), 
+    url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1920&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--cor-texto-claro);
+  padding: var(--espaco-md);
+}
+
+.hero__titulo {
+  font-size: var(--texto-display);
+  margin-bottom: var(--espaco-sm);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero__subtitulo {
+  font-size: var(--texto-h2);
+  margin-bottom: var(--espaco-lg);
+  font-weight: 300;
+  max-width: 800px;
+}
+
+/* ─── Componente 2: Botões BEM ───────────────────── */
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--espaco-sm) var(--espaco-md);
+  font-family: var(--fonte-base);
+  font-size: var(--texto-base);
+  font-weight: 600;
+  border: none;
+  border-radius: var(--raio-md);
+  cursor: pointer;
+  transition: background-color var(--transicao), transform var(--transicao), box-shadow var(--transicao);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--sombra-md);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--cor-destaque);
+  outline-offset: 2px;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.btn--primario {
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto-claro);
+}
+
+.btn--secundario {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto-claro);
+}
+
+.btn--perigo {
+  background-color: var(--cor-erro);
+  color: var(--cor-texto-claro);
+}
+
+.button-group {
+  display: flex;
+  gap: var(--espaco-md);
+  flex-wrap: wrap;
+}
+
+/* ─── Componente 3: Cartão com Position ──────────── */
+.card {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: var(--raio-lg);
+  overflow: hidden;
+  box-shadow: var(--sombra-sm);
+  transition: box-shadow var(--transicao);
+  max-width: 350px;
+}
+
+.card:hover {
+  box-shadow: var(--sombra-lg);
+}
+
+.card__badge {
+  position: absolute;
+  top: var(--espaco-md);
+  right: var(--espaco-md);
+  background-color: var(--cor-destaque);
+  color: var(--cor-texto-claro);
+  padding: var(--espaco-xs) var(--espaco-sm);
+  border-radius: var(--raio-circulo);
+  font-size: var(--texto-xs);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card__imagem {
+  height: 200px;
+  background-color: var(--cor-secundaria);
+  background-image: url('https://images.unsplash.com/photo-1618761714954-0b8cd0026356?q=80&w=600&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+}
+
+.card__corpo {
+  padding: var(--espaco-lg);
+}
+
+.card__titulo {
+  font-size: var(--texto-h3);
+  margin-bottom: var(--espaco-xs);
+}
+
+.card__texto {
+  font-size: var(--texto-sm);
+  color: var(--cor-secundaria);
+  margin-bottom: var(--espaco-md);
+}
+
+.card__link {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: var(--texto-sm);
+  transition: color var(--transicao);
+}
+
+.card__link:hover {
+  color: var(--cor-destaque);
+}
+
+/* ─── Componente 4: Tabela de Tokens ─────────────── */
+.color-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: var(--raio-md);
+  overflow: hidden;
+  box-shadow: var(--sombra-sm);
+  text-align: left;
+}
+
+.color-table th, 
+.color-table td {
+  padding: var(--espaco-md);
+}
+
+.color-table th {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto-claro);
+  font-family: var(--fonte-titulo);
+}
+
+.color-table tr:nth-child(even) {
+  background-color: var(--cor-fundo-alt);
+}
+
+.color-preview {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--raio-sm);
+  border: 1px solid rgba(0,0,0,0.1);
+  vertical-align: middle;
+}
+
+/* ─── Componente 5: Formulário Estilizado ────────── */
+.form {
+  background-color: #ffffff;
+  padding: var(--espaco-lg);
+  border-radius: var(--raio-lg);
+  box-shadow: var(--sombra-md);
+  max-width: 500px;
+}
+
+.form__grupo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--espaco-md);
+}
+
+.form__label {
+  font-size: var(--texto-sm);
+  font-weight: 600;
+  margin-bottom: var(--espaco-xs);
+  color: var(--cor-secundaria);
+}
+
+.form__input {
+  padding: var(--espaco-sm) var(--espaco-md);
+  border: 1px solid var(--cor-fundo-alt);
+  border-radius: var(--raio-md);
+  font-family: var(--fonte-base);
+  font-size: var(--texto-base);
+  color: var(--cor-texto);
+  transition: border-color var(--transicao), box-shadow var(--transicao);
+}
+
+.form__input::placeholder {
+  color: #94a3b8;
+}
+
+.form__input:focus {
+  outline: none;
+  border-color: var(--cor-primaria);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+.form__input:not(:placeholder-shown):valid {
+  border-color: var(--cor-sucesso);
+}
+
+.form__input:not(:placeholder-shown):invalid {
+  border-color: var(--cor-erro);
+}
+
+.form__mensagem-erro {
+  display: none;
+  color: var(--cor-erro);
+  font-size: var(--texto-xs);
+  margin-top: var(--espaco-xs);
+}
+
+.form__input:not(:placeholder-shown):invalid ~ .form__mensagem-erro {
+  display: block;
+}
+
+.form__botao {
+  width: 100%;
+  margin-top: var(--espaco-sm);
+}

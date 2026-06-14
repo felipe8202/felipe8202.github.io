@@ -1,0 +1,179 @@
+:root {
+  --cor-primaria: #2563eb;
+  --cor-fundo: #f8fafc;
+  --cor-texto: #334155;
+  --altura-nav: 70px;            
+  --espaco-md: 1rem;
+  --espaco-lg: 2rem;
+  --raio-borda: 8px;
+  --raio-circulo: 9999px;
+  --z-nav: 1000;
+  --z-sticky: 100;
+  --z-btn-topo: 999;
+  --z-tooltip: 500;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+
+  overflow-x: hidden; 
+}
+
+h1, h2, h3 {
+  color: #0f172a;
+}
+
+h1 {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  margin: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: var(--espaco-md);
+  padding-right: var(--espaco-md);
+
+  padding-top: calc(var(--altura-nav) + var(--espaco-lg));
+}
+
+.sessao-conteudo {
+  margin-bottom: calc(var(--espaco-lg) * 2);
+}
+
+.nav-fixa {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--altura-nav);
+  background-color: var(--cor-primaria);
+  color: white;
+  z-index: var(--z-nav);
+  display: flex;
+  justify-content: space-between; /* Afasta o título do botão de voltar */
+  align-items: center;
+  padding: 0 var(--espaco-lg);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Garante que o padding não estoure a tela */
+}
+
+.btn-voltar {
+  background-color: #ffffff;
+  color: var(--cor-primaria);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: var(--raio-borda);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.2s, transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn-voltar:hover {
+  background-color: #f1f5f9;
+  transform: translateY(-1px);
+}
+
+.titulo-sticky {
+  position: sticky;
+  top: var(--altura-nav);
+  z-index: var(--z-sticky);
+  background-color: var(--cor-fundo);
+  padding: var(--espaco-md) 0;
+  margin-top: 0;
+  border-bottom: 2px solid var(--cor-primaria);
+}
+
+.cartao-destaque {
+  position: relative;
+  background-color: #ffffff;
+  padding: var(--espaco-lg);
+  border: 1px solid #e2e8f0;
+  border-radius: var(--raio-borda);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+  margin: var(--espaco-lg) 0;
+}
+
+.selo {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background-color: #ef4444;
+  color: white;
+  padding: 4px 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border-radius: var(--raio-circulo);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-topo {
+  position: fixed;
+  bottom: var(--espaco-lg);
+  right: var(--espaco-lg);
+  z-index: var(--z-btn-topo);
+  width: 50px;
+  height: 50px;
+  border-radius: var(--raio-circulo);
+  background-color: var(--cor-primaria);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+.btn-topo:hover {
+  background-color: #1d4ed8;
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+  color: var(--cor-primaria);
+  font-weight: 600;
+  border-bottom: 2px dotted var(--cor-primaria);
+}
+
+.tooltip-texto {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1e293b;
+  color: white;
+  padding: 8px 12px;
+  border-radius: var(--raio-borda);
+  font-size: 0.85rem;
+  font-weight: normal;
+  white-space: nowrap;
+  z-index: var(--z-tooltip);
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.tooltip-texto::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1e293b transparent transparent transparent;
+}
+
+.tooltip-container:hover .tooltip-texto {
+  visibility: visible;
+  opacity: 1;
+}

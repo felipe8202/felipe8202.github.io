@@ -1,20 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PWEB1 — Cap. 07 — AT05 — Mini Design System</title>
-  <link rel="stylesheet" href="../css/at05-style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus - Mini Design System</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../css/at05-style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>AT05 — Mini Design System</h1>
-    <p><a href="../index.html">← Voltar para a página principal</a></p>
-  </header>
+  <section class="hero">
+    <h1 class="hero__titulo">Nexus Design System</h1>
+    <h2 class="hero__subtitulo">Uma biblioteca de componentes moderna, escalável e construída com metodologia BEM e CSS puro.</h2>
+    <a href="#componentes" class="btn btn--primario hero__cta">Ver Componentes</a>
+  </section>
 
-  <main>
-    <!-- conteúdo aqui -->
+  <main id="componentes" class="container">
+    
+    <a href="../index.html" class="btn-voltar">&larr; Voltar para a página principal</a>
+
+    <section>
+      <h2 class="section-title">1. Botões</h2>
+      <div class="button-group">
+        <button class="btn btn--primario">Ação principal</button>
+        <button class="btn btn--secundario">Ação secundária</button>
+        <button class="btn btn--perigo">Ação destrutiva</button>
+        <button class="btn btn--primario" disabled>Desabilitado</button>
+      </div>
+    </section>
+    
+    <br><br><br>
+
+    <section>
+      <h2 class="section-title">2. Cartão (Card)</h2>
+      <article class="card">
+        <span class="card__badge">Novo</span>
+        <div class="card__imagem"></div>
+        <div class="card__corpo">
+          <h3 class="card__titulo">Design Atômico</h3>
+          <p class="card__texto">Aprenda a dividir interfaces complexas em componentes reaproveitáveis e modulares.</p>
+          <a class="card__link" href="#">Ler artigo completo &rarr;</a>
+        </div>
+      </article>
+    </section>
+
+    <br><br><br>
+
+    <section>
+      <h2 class="section-title">3. Tokens de Cor</h2>
+      <div style="overflow-x: auto;">
+        <table class="color-table">
+          <thead>
+            <tr>
+              <th>Amostra</th>
+              <th>Nome / Token</th>
+              <th>Código Hex</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="color-preview" style="background-color: #4f46e5;"></span></td>
+              <td>Primária (<code>--cor-primaria</code>)</td>
+              <td>#4f46e5</td>
+            </tr>
+            <tr>
+              <td><span class="color-preview" style="background-color: #475569;"></span></td>
+              <td>Secundária (<code>--cor-secundaria</code>)</td>
+              <td>#475569</td>
+            </tr>
+            <tr>
+              <td><span class="color-preview" style="background-color: #f59e0b;"></span></td>
+              <td>Destaque (<code>--cor-destaque</code>)</td>
+              <td>#f59e0b</td>
+            </tr>
+            <tr>
+              <td><span class="color-preview" style="background-color: #10b981;"></span></td>
+              <td>Sucesso (<code>--cor-sucesso</code>)</td>
+              <td>#10b981</td>
+            </tr>
+            <tr>
+              <td><span class="color-preview" style="background-color: #ef4444;"></span></td>
+              <td>Erro (<code>--cor-erro</code>)</td>
+              <td>#ef4444</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <br><br><br>
+
+    <section>
+      <h2 class="section-title">4. Formulário Interativo</h2>
+      <form class="form" action="#" method="POST" novalidate>
+        
+        <div class="form__grupo">
+          <label class="form__label" for="nome">Nome Completo *</label>
+          <input class="form__input" type="text" id="nome" name="nome" placeholder="Ex: Maria Silva" required pattern=".{3,}">
+          <span class="form__mensagem-erro">Por favor, insira um nome válido (mín. 3 caracteres).</span>
+        </div>
+
+        <div class="form__grupo">
+          <label class="form__label" for="email">E-mail *</label>
+          <input class="form__input" type="email" id="email" name="email" placeholder="maria@exemplo.com" required>
+          <span class="form__mensagem-erro">Insira um endereço de e-mail válido com '@'.</span>
+        </div>
+
+        <div class="form__grupo">
+          <label class="form__label" for="assunto">Assunto</label>
+          <input class="form__input" type="text" id="assunto" name="assunto" placeholder="Motivo do contato">
+        </div>
+
+        <div class="form__grupo">
+          <label class="form__label" for="mensagem">Mensagem *</label>
+          <textarea class="form__input" id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+          <span class="form__mensagem-erro">Este campo não pode ficar vazio.</span>
+        </div>
+
+        <button type="submit" class="btn btn--primario form__botao">Enviar Mensagem</button>
+      </form>
+    </section>
+
   </main>
 
 </body>

@@ -1,21 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PWEB1 — Cap. 07 — AT04 — Página com Posicionamento</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AT04 - Galeria de Posicionamento CSS</title>
   <link rel="stylesheet" href="../css/at04.css">
 </head>
-<body>
+<body id="topo">
 
-  <header>
-    <h1>AT04 — Página com Posicionamento</h1>
-    <p><a href="../index.html">← Voltar para a página principal</a></p>
-  </header>
+  <nav class="nav-fixa">
+    <h1>Catálogo de Posicionamento</h1>
+    <a href="../index.html" class="btn-voltar">Voltar para a página principal</a>
+  </nav>
 
   <main>
-    <!-- conteúdo aqui -->
-  </main>
+    <section class="sessao-conteudo">
+      <h2 class="titulo-sticky">Introdução ao Posicionamento</h2>
+      
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      
+      <p>
+        Passe o mouse sobre
+        <span class="tooltip-container">
+          esta palavra
+          <span class="tooltip-texto">Esta é a dica de contexto!</span>
+        </span>
+        para ver o tooltip. Repare como o espaço é mantido, mas o elemento fica oculto.
+      </p>
 
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      
+      <article class="cartao-destaque">
+        <span class="selo">NOVO</span>
+        <h3>Título do cartão</h3>
+        <p>Descrição do item em destaque. Note como o selo está perfeitamente sobreposto à borda superior direita do container graças ao posicionamento absoluto.</p>
+      </article>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget vehicula libero. Phasellus vestibulum hendrerit nulla id placerat. Nunc convallis mi a lacus vehicula, nec fermentum eros cursus.</p>
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. Aenean a ex vel lorem dapibus mollis.</p>
+    </section>
+
+    <section class="sessao-conteudo">
+      <h2 class="titulo-sticky">Mais Demonstrações (Role mais)</h2>
+      
+      <div class="bloco-texto">
+        <p>Este parágrafo possui bastante texto e vai simular ainda mais espaço de tela para visualizarmos a barra de navegação no topo e também o cabeçalho "grudento" que acompanha a leitura. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dignissim elementum mi id rhoncus. Suspendisse pulvinar interdum sem in volutpat.</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec euismod nisl quis elit rutrum mattis.</p>
+        <p>Phasellus eget justo auctor, congue ipsum et, iaculis erat. Cras et sem felis. Integer vel mauris egestas, viverra lectus et, accumsan nunc.</p>
+        <p>Aliquam erat volutpat. Fusce feugiat non sem ac imperdiet. Vestibulum in augue elementum, laoreet erat sed, cursus urna.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </section>
+
+    <a href="#topo" class="btn-topo" title="Voltar ao topo">▲</a>
+
+  </main>
 </body>
 </html>

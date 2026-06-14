@@ -1,0 +1,286 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 15px;
+}
+
+header h1 {
+    color: #2c3e50;
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+section h2 {
+    color: #495057;
+    margin-top: 0;
+    border-bottom: 2px solid #f1f3f5;
+    padding-bottom: 8px;
+    font-size: 1.35rem;
+}
+
+::selection {
+    background-color: #ffe082;
+    color: #111111;
+}
+
+#sec-atributo ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#sec-atributo li {
+    margin-bottom: 12px;
+}
+
+#sec-atributo a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+#sec-atributo a[href^="https"] {
+    color: #2e7d32;
+}
+
+#sec-atributo a[href^="http://"] {
+    color: #d32f2f;
+}
+
+#sec-atributo a[href^="http://"]::after {
+    content: " ⚠";
+    font-weight: bold;
+}
+
+#sec-atributo a[href$=".pdf"] {
+    color: #ef6c00;
+}
+
+#sec-atributo a[href$=".pdf"]::after {
+    content: " [PDF]";
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+#sec-atributo a[href^="#"] {
+    color: #757575;
+    font-style: italic;
+}
+
+#sec-atributo a[target="_blank"]::after {
+    content: " ↗";
+    font-size: 0.9em;
+}
+
+#sec-estrutural ol {
+    padding-left: 20px;
+}
+
+#sec-estrutural li {
+    padding: 8px 12px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+}
+
+#sec-estrutural li:first-child {
+    font-weight: bold;
+}
+
+#sec-estrutural li:last-child {
+    color: #1565c0;
+}
+
+#sec-estrutural li:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+#sec-estrutural li:nth-child(odd) {
+    background-color: #e3f2fd;
+}
+
+#sec-estrutural li:nth-child(3) {
+    border-left: 5px solid #ff9800;
+    padding-left: 7px;
+}
+
+#sec-estado form {
+    max-width: 450px;
+}
+
+#sec-estado label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #495057;
+}
+
+#sec-estado input[type="text"],
+#sec-estado input[type="email"] {
+    display: inline-block;
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 0.95rem;
+}
+
+#sec-estado input:focus {
+    outline: 2px solid #2196f3;
+    outline-offset: 2px;
+}
+
+#sec-estado input:disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+    border-color: #ced4da;
+}
+
+#sec-estado input:required {
+    border-left: 4px solid #d32f2f;
+}
+
+#sec-estado input:valid {
+    border-color: #2e7d32;
+}
+
+#sec-estado input:invalid {
+    border-color: #d32f2f;
+}
+
+#sec-estado label:has(input[type="checkbox"]) {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#sec-estado input[type="checkbox"]:checked + label {
+    font-weight: bold;
+}
+
+#sec-estado label:has(input[type="checkbox"]:checked) {
+    font-weight: bold;
+}
+
+#sec-estado button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2196f3;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#sec-estado button:hover {
+    background-color: #1976d2;
+}
+
+#sec-pseudoelemento p {
+    margin-bottom: 12px;
+}
+
+.citacao::before {
+    content: "“";
+    font-size: 2rem;
+    color: #e91e63;
+    vertical-align: middle;
+    line-height: 0;
+    margin-right: 4px;
+    font-family: Georgia, serif;
+}
+
+.citacao::after {
+    content: "”";
+    font-size: 2rem;
+    color: #e91e63;
+    vertical-align: middle;
+    line-height: 0;
+    margin-left: 4px;
+    font-family: Georgia, serif;
+}
+
+.obrigatorio::after {
+    content: " *";
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.input-custom {
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.input-custom::placeholder {
+    color: #9e9e9e;
+    font-style: italic;
+}
+
+#sec-combinadores h3 + p {
+    font-size: 1.12rem;
+    color: #673ab7;
+    font-weight: 500;
+}
+
+#sec-combinadores ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+#sec-combinadores li {
+    padding: 6px 12px;
+    margin-bottom: 6px;
+    border-radius: 4px;
+    background-color: #f1f3f5;
+    transition: all 0.2s ease;
+}
+
+#sec-combinadores li:not(.ativo) {
+    opacity: 0.5;
+}
+
+#sec-combinadores li.ativo {
+    font-weight: bold;
+    color: #2e7d32;
+    background-color: #e8f5e9;
+}
+
+#sec-combinadores li.ativo::before {
+    content: "✔ ";
+    color: #4caf50;
+}
