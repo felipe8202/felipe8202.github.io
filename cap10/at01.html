@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone - Projeto Responsivo</title>
+    <link rel="stylesheet" href="at01.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <strong style="color: var(--primary-color); font-size: 1.5rem;">airclone</strong>
+        </div>
+
+        <div class="search-container">
+            <div class="search-bar">
+                <span class="search-text-mobile">Para onde você vai?</span>
+
+                <div class="search-desktop-segments">
+                    <button class="search-segment">Qualquer lugar</button>
+                    <span class="search-divider"></span>
+                    <button class="search-segment">Qualquer semana</button>
+                    <span class="search-divider"></span>
+                    <button class="search-segment light">Adicionar hóspedes</button>
+                </div>
+
+                <button class="search-icon-btn">
+                    🔍
+                </button>
+            </div>
+        </div>
+
+        <div class="user-menu">
+            <a href="#" class="host-link">Anuncie o seu espaço</a>
+            <button class="globe-btn">🌐</button>
+            <button class="profile-btn">
+                <span class="menu-icon">☰</span>
+                <span class="avatar-icon">👤</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <nav class="categories-bar">
+            <button class="category-item active">
+                <span class="category-icon">🏖️</span>
+                <span class="category-text">Em frente à praia</span>
+            </button>
+            <button class="category-item">
+                <span class="category-icon">🏊‍♂️</span>
+                <span class="category-text">Piscinas incríveis</span>
+            </button>
+            <button class="category-item">
+                <span class="category-icon">🏔️</span>
+                <span class="category-text">Cabanas</span>
+            </button>
+            <button class="category-item">
+                <span class="category-icon">🏰</span>
+                <span class="category-text">Castelos</span>
+            </button>
+            <button class="category-item">
+                <span class="category-icon">❄️</span>
+                <span class="category-text">No Ártico</span>
+            </button>
+        </nav>
+
+        <section class="content">
+            <div class="cards-container">
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/img2.webp" alt="Propriedade em Tampa nos Estados Unidos">
+                        <button class="favorite-btn" aria-label="Favoritar">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: var(--bg-color); stroke-width: 2; overflow: visible;">
+                                <path
+                                    d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Tampa, United States</h3>
+                            <span class="rating">★ 4.1</span>
+                        </div>
+                        <p class="subtitle">A 7.252 km de distância</p>
+                        <p class="subtitle">15 - 20 de Jun.</p>
+                        <p class="price"><strong>R$ 2.069</strong> noite</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/img1.webp" alt="Propriedade em Edimburgo no Reino Unido">
+                        <button class="favorite-btn" aria-label="Favoritar">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: var(--bg-color); stroke-width: 2; overflow: visible;">
+                                <path
+                                    d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Edinburgh, United Kingdom</h3>
+                            <span class="rating">★ 4.53</span>
+                        </div>
+                        <p class="subtitle">A 8.109 km de distância</p>
+                        <p class="subtitle">09 - 12 de Set.</p>
+                        <p class="price"><strong>R$ 2.350</strong> noite</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/img4.webp" alt="Propriedade no Lago Tahoe nos Estados Unidos">
+                        <button class="favorite-btn" aria-label="Favoritar">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: var(--bg-color); stroke-width: 2; overflow: visible;">
+                                <path
+                                    d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Lake Tahoe, United States</h3>
+                            <span class="rating">★ 4.15</span>
+                        </div>
+                        <p class="subtitle">A 6.526 km de distância</p>
+                        <p class="subtitle">11 - 26 de Jan.</p>
+                        <p class="price"><strong>R$ 1.839</strong> noite</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/img3.webp" alt="Propriedade em Villamartín na Espanha">
+                        <button class="favorite-btn" aria-label="Favoritar">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: var(--bg-color); stroke-width: 2; overflow: visible;">
+                                <path
+                                    d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Villamartín, Spain</h3>
+                            <span class="rating">★ 5.0</span>
+                        </div>
+                        <p class="subtitle">A 7.500 km de distância</p>
+                        <p class="subtitle">01 - 09 de Jul.</p>
+                        <p class="price"><strong>R$ 3.450</strong> noite</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/img5.webp" alt="Propriedade em Villamartín na Espanha">
+                        <button class="favorite-btn" aria-label="Favoritar">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: var(--bg-color); stroke-width: 2; overflow: visible;">
+                                <path
+                                    d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>São Paulo, Brasil</h3>
+                            <span class="rating">★ 4.39</span>
+                        </div>
+                        <p class="subtitle">A 2.180 km de distância</p>
+                        <p class="subtitle">08 - 12 de Jul.</p>
+                        <p class="price"><strong>R$ 749</strong> noite</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/img6.webp" alt="Propriedade em Villamartín na Espanha">
+                        <button class="favorite-btn" aria-label="Favoritar">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: var(--bg-color); stroke-width: 2; overflow: visible;">
+                                <path
+                                    d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Orlando, United States</h3>
+                            <span class="rating">★ 4.92</span>
+                        </div>
+                        <p class="subtitle">A 6.865 km de distância</p>
+                        <p class="subtitle">05 - 10 de Jul.</p>
+                        <p class="price"><strong>R$ 1.980</strong> noite</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/img7.webp" alt="Propriedade em Villamartín na Espanha">
+                        <button class="favorite-btn" aria-label="Favoritar">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: var(--bg-color); stroke-width: 2; overflow: visible;">
+                                <path
+                                    d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Brasília, Brasil</h3>
+                            <span class="rating">★ 4.88</span>
+                        </div>
+                        <p class="subtitle">A 1.892 km de distância</p>
+                        <p class="subtitle">29 - 05 de Ago.</p>
+                        <p class="price"><strong>R$ 625</strong> noite</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/img8.webp" alt="Propriedade em Villamartín na Espanha">
+                        <button class="favorite-btn" aria-label="Favoritar">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; fill: rgba(0, 0, 0, 0.5); height: 24px; width: 24px; stroke: var(--bg-color); stroke-width: 2; overflow: visible;">
+                                <path
+                                    d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="card-info">
+                        <div class="card-header">
+                            <h3>Curitiba, Brasil</h3>
+                            <span class="rating">★ 4.61</span>
+                        </div>
+                        <p class="subtitle">A 2.840 km de distância</p>
+                        <p class="subtitle">04 - 08 de Out.</p>
+                        <p class="price"><strong>R$ 559</strong> noite</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Recriação inspirada no <a href="https://www.airbnb.com.br/">Airbnb</a> para fins educacionais. &copy; Felipe Fernando. </p>
+    </footer>
+
+</body>
+
+</html>
