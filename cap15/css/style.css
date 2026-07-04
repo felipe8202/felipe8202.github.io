@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #0056b3;
+    padding: 0 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea,
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Destaque para UX: Campos válidos e inválidos */
+.valido {
+    border-color: #28a745 !important;
+    background-color: #f4fff5;
+}
+
+.invalido {
+    border-color: #dc3545 !important;
+    background-color: #fff4f4;
+}
+
+.erro {
+    color: #dc3545;
+    font-size: 0.85em;
+    margin-top: 5px;
+    display: none;
+}
+
+.erro.ativo {
+    display: block;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.checkbox-termo {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.contador {
+    text-align: right;
+    font-size: 0.85em;
+    color: #666;
+}
+
+.botoes-acao {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    flex: 1;
+}
+
+#btnEnviar {
+    background-color: #28a745;
+    color: white;
+}
+
+#btnLimpar {
+    background-color: #6c757d;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Melhoria UX: Preview e Botoes de Senha */
+#previewFoto {
+    max-width: 150px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.input-com-botao {
+    display: flex;
+    position: relative;
+}
+
+.input-com-botao input {
+    flex: 1;
+}
+
+.btn-toggle {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 5px 10px;
+    background: #e2e2e2;
+    color: #333;
+    font-size: 0.8em;
+}

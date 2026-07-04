@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - Escola Técnica</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Formulário de Inscrição</h1>
+
+        <form id="formInscricao" novalidate>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required minlength="3"
+                        placeholder="Digite seu nome completo">
+                    <span class="erro" id="erroNome"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="exemplo@email.com">
+                    <span class="erro" id="erroEmail"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(82) 99999-9999"
+                        maxlength="15">
+                    <span class="erro" id="erroTelefone"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="dataNascimento">Data de Nascimento:</label>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required>
+                    <span class="erro" id="erroDataNascimento"></span>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados Acadêmicos</legend>
+
+                <div class="form-group">
+                    <label for="curso">Curso:</label>
+                    <select id="curso" name="curso" required>
+                        <option value="">Selecione um curso...</option>
+                        <option value="informatica">Informática</option>
+                        <option value="enfermagem">Enfermagem</option>
+                        <option value="administracao">Administração</option>
+                    </select>
+                    <span class="erro" id="erroCurso"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Turno:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="matutino" name="turno" value="matutino" required>
+                        <label for="matutino">Matutino</label>
+                        <input type="radio" id="vespertino" name="turno" value="vespertino">
+                        <label for="vespertino">Vespertino</label>
+                        <input type="radio" id="noturno" name="turno" value="noturno">
+                        <label for="noturno">Noturno</label>
+                    </div>
+                    <span class="erro" id="erroTurno"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Áreas de Interesse (Selecione no mínimo 2):</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="intWeb" name="interesse" value="web">
+                        <label for="intWeb">Desenv. Web</label>
+                        <input type="checkbox" id="intDados" name="interesse" value="dados">
+                        <label for="intDados">Banco de Dados</label>
+                        <input type="checkbox" id="intRedes" name="interesse" value="redes">
+                        <label for="intRedes">Redes</label>
+                        <input type="checkbox" id="intHardware" name="interesse" value="hardware">
+                        <label for="intHardware">Hardware</label>
+                    </div>
+                    <span class="erro" id="erroInteresse"></span>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Segurança e Complementos</legend>
+
+                <div class="form-group relative">
+                    <label for="senha">Senha:</label>
+                    <div class="input-com-botao">
+                        <input type="password" id="senha" name="senha" required minlength="8"
+                            placeholder="Mínimo 8 caracteres">
+                        <button type="button" id="toggleSenha" class="btn-toggle">Mostrar</button>
+                    </div>
+                    <span class="erro" id="erroSenha"></span>
+                </div>
+
+                <div class="form-group relative">
+                    <label for="confirmarSenha">Confirmar Senha:</label>
+                    <div class="input-com-botao">
+                        <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+                        <button type="button" id="toggleConfirmarSenha" class="btn-toggle">Mostrar</button>
+                    </div>
+                    <span class="erro" id="erroConfirmarSenha"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="foto">Foto (Apenas JPG/PNG, máx 2MB):</label>
+                    <input type="file" id="foto" name="foto" accept=".jpg, .jpeg, .png">
+                    <img id="previewFoto" src="" alt="Preview da imagem" style="display: none;">
+                    <span class="erro" id="erroFoto"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem (50 a 500 caracteres):</label>
+                    <textarea id="mensagem" name="mensagem" required minlength="50" maxlength="500"></textarea>
+                    <div class="contador"><span id="charCount">0</span>/500</div>
+                    <span class="erro" id="erroMensagem"></span>
+                </div>
+
+                <div class="form-group checkbox-termo">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Li e aceito os termos de compromisso.</label>
+                    <span class="erro" id="erroTermos"></span>
+                </div>
+            </fieldset>
+
+            <div class="botoes-acao">
+                <button type="submit" id="btnEnviar">Enviar Inscrição</button>
+                <button type="reset" id="btnLimpar">Limpar Formulário</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="js/util.js"></script>
+    <script src="js/validacoes.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
