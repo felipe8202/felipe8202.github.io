@@ -1,6 +1,3 @@
-/* =========================================
-   VARIÁVEIS (TEMA CLARO FIXO)
-========================================= */
 :root {
     --bg-color: #ffffff;
     --text-color: #222222;
@@ -10,9 +7,6 @@
     --card-gap: 0.5rem;
 }
 
-/* =========================================
-   RESETS E GERAL
-========================================= */
 * {
     margin: 0;
     padding: 0;
@@ -41,9 +35,6 @@ img {
     aspect-ratio: 1 / 1;
 }
 
-/* =========================================
-   HEADER FIXO (STICKY) E PREMIUM
-========================================= */
 header {
     display: flex;
     flex-direction: column;
@@ -58,7 +49,6 @@ header {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03), 0 4px 6px rgba(0, 0, 0, 0.02);
 }
 
-/* Barra de categorias alinhada */
 .categories-bar {
     display: flex;
     gap: 2.5rem;
@@ -114,9 +104,6 @@ header {
     display: none; 
 }
 
-/* =========================================
-   CARDS DE PROPRIEDADES (ALTA FIDELIDADE)
-========================================= */
 .cards-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -150,12 +137,10 @@ header {
     transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-/* Efeito de zoom sutil e elegante */
 .card:hover .card-image-wrapper img {
     transform: scale(1.02);
 }
 
-/* Botão de Favorito */
 .favorite-btn {
     position: absolute;
     top: 12px;
@@ -176,7 +161,6 @@ header {
     transform: scale(0.9);
 }
 
-/* Simulador de Bolinhas do Carrossel (O segredo do visual Airbnb) */
 .card-image-wrapper::after {
     content: "• • • •";
     position: absolute;
@@ -193,10 +177,9 @@ header {
 }
 
 .card:hover .card-image-wrapper::after {
-    opacity: 1; /* Aparece apenas no hover, igual ao original */
+    opacity: 1;
 }
 
-/* Informações e Alinhamento de Linhas */
 .card-info {
     display: flex;
     flex-direction: column;
@@ -238,7 +221,7 @@ header {
 }
 
 .price strong {
-    font-weight: 600; /* Preço numérico em destaque */
+    font-weight: 600;
 }
 
 .price span {
@@ -246,9 +229,6 @@ header {
     font-weight: 400;
 }
 
-/* =========================================
-   BARRA DE PESQUISA (PERFEIÇÃO VISUAL)
-========================================= */
 .search-container {
     width: 100%;
     margin-top: 0.75rem;
@@ -303,9 +283,6 @@ header {
     box-shadow: 0 8px 20px rgba(0,0,0,0.18);
 }
 
-/* =========================================
-   FOOTER
-========================================= */
 footer {
     padding: 2.5rem 1.5rem;
     border-top: 1px solid var(--border-color);
@@ -315,23 +292,17 @@ footer {
     text-align: center;
 }
 
-/* Novo destaque para o link do Footer */
 footer a {
-    color: #0066cc; /* Azul clássico de links */
+    color: #0066cc;
     text-decoration: underline;
     font-weight: 600;
     transition: color 0.2s ease;
 }
 
 footer a:hover {
-    color: #004c99; /* Azul mais escuro no hover */
+    color: #004c99;
 }
 
-/* =========================================
-   BREAKPOINTS (RESPONSIVIDADE CALIBRADA)
-========================================= */
-
-/* 1. Tablet / iPad Mini (min-width: 768px) */
 @media (min-width: 768px) {
     header {
         flex-direction: row;
@@ -353,7 +324,7 @@ footer a:hover {
     .categories-bar {
         padding: 1.25rem 2rem; 
         gap: 2rem; 
-        justify-content: center; /* ALINHAMENTO CENTRALIZADO ADICIONADO AQUI */
+        justify-content: center;
     }
 
     .user-menu {
@@ -372,7 +343,6 @@ footer a:hover {
     }
 }
 
-/* 2. Desktop (min-width: 1024px) */
 @media (min-width: 1024px) {
     header {
         display: grid;
@@ -491,7 +461,7 @@ footer a:hover {
 
     .categories-bar {
         padding: 1rem 3rem; 
-        justify-content: center; /* Mantém centralizado no desktop */
+        justify-content: center;
     }
 
     .cards-container {
@@ -500,7 +470,6 @@ footer a:hover {
     }
 }
 
-/* 3. Monitores Grandes (min-width: 1440px) */
 @media (min-width: 1440px) {
     .cards-container {
         grid-template-columns: repeat(4, 1fr);

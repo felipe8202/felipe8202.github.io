@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+section {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+}
+
+hr { border: 0; border-top: 1px solid #ddd; margin: 20px 0; }
+
+#perfil {
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+#fotoPerfil { border-radius: 50%; object-fit: cover; }
+
+.destaque {
+    border: 3px solid #ff9800 !important;
+    background-color: #fff8e1 !important;
+    box-shadow: 0 0 15px rgba(255, 152, 0, 0.5);
+    transform: scale(1.02);
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover { background-color: #0056b3; transform: scale(1.05); }
+
+input[type="email"], input[type="text"], select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+    max-width: 100%;
+}
+
+body.tema-escuro { background-color: #121212; color: #e0e0e0; }
+body.tema-escuro main { background-color: #1e1e1e; box-shadow: 0 4px 8px rgba(255,255,255,0.05); }
+body.tema-escuro section { border-color: #333; }
+body.tema-escuro hr { border-top: 1px solid #444; }
+
+body.tema-azul { background-color: #e3f2fd; color: #0d47a1; }
+body.tema-azul main { background-color: #bbdefb; }
+body.tema-azul section { border-color: #90caf9; }
+body.tema-azul button { background-color: #1565c0; }
+body.tema-azul button:hover { background-color: #0d47a1; }
