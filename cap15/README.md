@@ -1,7 +1,7 @@
 # Laboratório - Validação de Formulários com HTML e JavaScript 📝
 
 ## 🎯 Objetivo
-[cite_start]Desenvolver um formulário de cadastro completo utilizando HTML, CSS e JavaScript, implementando validações em tempo real e no envio do formulário[cite: 187]. [cite_start]O projeto visa resolver a situação-problema de uma escola técnica, impedindo o envio de dados inválidos e fornecendo mensagens claras de erro para melhorar a experiência do usuário[cite: 188, 189, 190].
+Desenvolver um formulário de cadastro completo utilizando HTML, CSS e JavaScript, implementando validações em tempo real e no envio do formulário. O projeto visa resolver a situação-problema de uma escola técnica, impedindo o envio de dados inválidos e fornecendo mensagens claras de erro para melhorar a experiência do usuário.
 
 ## Validações implementadas
 
@@ -21,7 +21,7 @@
 | **Termos** | Aceite obrigatório (Checkbox) |
 
 ## 📁 Estrutura de Arquivos
-[cite_start]A entrega segue rigorosamente a estrutura de diretórios solicitada[cite: 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285]:
+A entrega segue rigorosamente a estrutura de diretórios solicitada:
 
 ```text
 cap-15/
